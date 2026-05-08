@@ -258,4 +258,7 @@ async function process() {
     ar('SHA-512 ', await getHash(str, 'SHA-512'));
 }
 
+const inputEl = document.getElementById('input');
+
+initURLSync(inputEl, process);
 process();
